@@ -87,6 +87,12 @@ namespace PcmHacking
                     this.MaxSendSize = 1024 + 12;
                     this.MaxReceiveSize = 1024 + 12;
                 }
+                else if (stID.Contains("STN2230"))
+                {
+                    this.MaxSendSize = 1024 + 12;
+                    this.MaxReceiveSize = 1024 + 12;
+                    this.Supports4X = false;
+                }
                 else
                 {
                     this.Logger.AddUserMessage("This ScanTool device is not supported.");
