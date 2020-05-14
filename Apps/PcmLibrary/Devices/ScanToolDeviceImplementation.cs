@@ -87,10 +87,11 @@ namespace PcmHacking
                     this.MaxSendSize = 1024 + 12;
                     this.MaxReceiveSize = 1024 + 12;
                 }
-                else if (stID.Contains("STN2230"))
+                else if (stID.Contains("STN2230")) // EX
                 {
-                    this.MaxSendSize = 1024 + 12;
-                    this.MaxReceiveSize = 1024 + 12;
+                    // Trying to add support for the OBDLink Ex device.
+                    this.MaxSendSize = 512 + 12;
+                    this.MaxReceiveSize = 512 + 12;
                     this.Supports4X = false;
                 }
                 else
